@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # Update and upgrade the server
@@ -20,7 +19,7 @@ sudo apt install php php-gd php-mysql php-curl php-xml php-zip php-intl php-mbst
 # Create a Nextcloud database and user
 # Note: Replace 'yourpassword' with a secure password.
 sudo mysql -e "CREATE DATABASE nextcloud;"
-sudo mysql -e "CREATE USER 'nextclouduser'@'localhost' IDENTIFIED BY 'yourpassword';"
+sudo mysql -e "CREATE USER 'nextclouduser'@'localhost' IDENTIFIED BY '5up3r54f3P455w0rd';"
 sudo mysql -e "GRANT ALL PRIVILEGES ON nextcloud.* TO 'nextclouduser'@'localhost';"
 sudo mysql -e "FLUSH PRIVILEGES;"
 
